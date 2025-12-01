@@ -20,67 +20,45 @@ The **Coordinate Algebra Geometry Framework** provides an intuitive and powerful
 In differential geometry, coordinate systems can be represented using Dirac notation, providing a unified framework for geometric computations:
 
 **Coordinate System as Ket Vector:**
-$$
-|C\rangle = \text{Coordinate system state}
-$$
+$$|C\rangle = \text{Coordinate system state}$$
 
 **Dual Coordinate System as Bra Vector:**
-$$
-\langle C| = \text{Dual coordinate system}
-$$
+$$\langle C| = \text{Dual coordinate system}$$
 
 **Transformation as Operator:**
-$$
-\hat{T} = \text{Transformation operator between coordinate systems}
-$$
+$$\hat{T} = \text{Transformation operator between coordinate systems}$$
 
 ### Core Dirac-Based Definitions
 
 **Coordinate System Composition:**
-$$
-|C_3\rangle = |C_2\rangle \circ |C_1\rangle
-$$
+$$|C_3\rangle = |C_2\rangle \circ |C_1\rangle$$
 
 **Relative Transformation:**
-$$
-|R\rangle = |C_1\rangle \langle C_2|
-$$
+$$|R\rangle = |C_1\rangle \langle C_2|$$
 
 **Inverse Transformation:**
-$$
-|C^{-1}\rangle = \langle C|
-$$
+$$|C^{-1}\rangle = \langle C|$$
 
 ## 🔄 Core Coordinate Transforms in Dirac Notation
 
 ### Basic Vector Transforms
 
 **Local to World Coordinate Transform:**
-$$
-|V_w\rangle = |V_L\rangle |C\rangle
-$$
+$$|V_w\rangle = |V_L\rangle |C\rangle$$
 
 **World to Local Coordinate Projection:**
-$$
-|V_L\rangle = \langle C| V_w\rangle
-$$
+$$|V_L\rangle = \langle C| V_w\rangle$$
 
 ### Multi-Level Hierarchical Systems
 
 **Forward Transform Chain:**
-$$
-|C_{total}\rangle = |C_n\rangle \circ |C_{n-1}\rangle \circ \cdots \circ |C_1\rangle
-$$
+$$|C_{total}\rangle = |C_n\rangle \circ |C_{n-1}\rangle \circ \cdots \circ |C_1\rangle$$
 
 **Vector Transformation Through Chain:**
-$$
-|V_w\rangle = |V_L\rangle |C_{total}\rangle
-$$
+$$|V_w\rangle = |V_L\rangle |C_{total}\rangle$$
 
 **Inverse Chain Transformation:**
-$$
-|V_L\rangle = \langle C_{total}| V_w\rangle
-$$
+$$|V_L\rangle = \langle C_{total}| V_w\rangle$$
 
 ## 🧮 Advanced Features: Differential Geometry with Dirac Notation
 
@@ -88,16 +66,10 @@ $$
 
 **Definition 1 (Intrinsic Gradient Operator):**
 For parameter $\mu \in \{u,v\}$, the intrinsic gradient operator is defined as:
-$$
-\boxed{
-G_\mu = \frac{\partial |c\rangle}{\partial \mu} \langle c|
-}
-$$
+$$G_\mu = \frac{\partial |c\rangle}{\partial \mu} \langle c|$$
 
 In the continuous limit:
-$$
-G_\mu = \partial_\mu |c\rangle \langle c|
-$$
+$$G_\mu = \partial_\mu |c\rangle \langle c|$$
 
 where $|c(u,v)\rangle = [|e_u\rangle, |e_v\rangle, |n\rangle]$ represents the local orthonormal frame.
 
@@ -107,18 +79,10 @@ where $|c(u,v)\rangle = [|e_u\rangle, |e_v\rangle, |n\rangle]$ represents the lo
 
 **Theorem 1 (Curvature Transformation):**
 Frame bundle curvature to Riemann curvature tensor conversion:
-$$
-\boxed{
-R_{ijkl} = -\sqrt{\det(g)} \langle e_k | [G_i, G_j] | e_l \rangle
-}
-$$
+$$R_{ijkl} = -\sqrt{\det(g)} \langle e_k | [G_i, G_j] | e_l \rangle$$
 
 **Gaussian Curvature Formula:**
-$$
-\boxed{
-K = -\frac{\langle e_u | [G_u, G_v] | e_v \rangle}{\sqrt{\det(g)}} = \frac{R_{1212}}{\det(g)}
-}
-$$
+$$K = -\frac{\langle e_u | [G_u, G_v] | e_v \rangle}{\sqrt{\det(g)}} = \frac{R_{1212}}{\det(g)}$$
 
 **Hierarchical Structure:**
 ```
@@ -131,9 +95,7 @@ Tangent Bundle Riemann Curvature R_{ijkl} (Intrinsic geometric quantity)
 
 **Spherical Frame Definition:**
 Unit sphere parameterization:
-$$
-S(\theta,\phi) = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)
-$$
+$$S(\theta,\phi) = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$$
 
 **Intrinsic Orthonormal Frame:**
 $$
@@ -145,21 +107,14 @@ $$
 $$
 
 **Intrinsic Gradient Operators:**
-$$
-G_\theta = \begin{bmatrix} 0 & 0 & -1 \\ 0 & 0 & 0 \\ 1 & 0 & 0 \end{bmatrix}, \quad
-G_\phi = \begin{bmatrix} 0 & 0 & \sin\theta \\ 0 & 0 & 0 \\ -\sin\theta & 0 & 0 \end{bmatrix}
-$$
+$$G_\theta = \begin{bmatrix} 0 & 0 & -1 \\ 0 & 0 & 0 \\ 1 & 0 & 0 \end{bmatrix}, \quad G_\phi = \begin{bmatrix} 0 & 0 & \sin\theta \\ 0 & 0 & 0 \\ -\sin\theta & 0 & 0 \end{bmatrix}$$
 
 ## 🧮 Unified Differential Operator Framework with Coordinate Algebra
 
 ### Differential Coordinate Concept
 
 **Differential Coordinate Symbol:**
-$$
-\boxed{
-d|\mathbb{C}\rangle = |I_c\rangle \cdot d|\mathbf{xyz}\rangle
-}
-$$
+$$d|\mathbb{C}\rangle = |I_c\rangle \cdot d|\mathbf{xyz}\rangle$$
 
 where:
 - $|I_c\rangle$: World coordinate system
@@ -169,32 +124,18 @@ where:
 ### Coordinate Dot Product Operation
 
 For two coordinate systems $|A\rangle = [|a_1\rangle, |a_2\rangle, |a_3\rangle]$ and $|B\rangle = [|b_1\rangle, |b_2\rangle, |b_3\rangle]$, define the dot product:
-$$
-\langle A | B \rangle = \sum_{i=1}^3 \langle a_i | b_i \rangle
-$$
+$$\langle A | B \rangle = \sum_{i=1}^3 \langle a_i | b_i \rangle$$
 
 ### Elegant Differential Operator Formulation
 
 **Gradient Operator:**
-$$
-\boxed{
-\nabla f = \frac{df}{d\langle\mathbb{C}|}
-}
-$$
+$$\nabla f = \frac{df}{d\langle\mathbb{C}|}$$
 
 **Divergence Operator:**
-$$
-\boxed{
-\nabla \cdot \mathbf{F} = \left( \frac{d\langle\mathbf{F}|}{d\langle\mathbb{C}|} \right) |I_c\rangle
-}
-$$
+$$\nabla \cdot \mathbf{F} = \left( \frac{d\langle\mathbf{F}|}{d\langle\mathbb{C}|} \right) |I_c\rangle$$
 
 **Laplace-Beltrami Operator:**
-$$
-\boxed{
-\Delta f = \nabla \cdot (\nabla f) = \left( \frac{d\langle\nabla f|}{d\langle\mathbb{C}|} \right) |I_c\rangle
-}
-$$
+$$\Delta f = \nabla \cdot (\nabla f) = \left( \frac{d\langle\nabla f|}{d\langle\mathbb{C}|} \right) |I_c\rangle$$
 
 ## 🎯 Frame Field Curve Interpolation System
 
@@ -205,41 +146,27 @@ $$
 Given discrete point sequence $|\mathbf{P}_0\rangle, |\mathbf{P}_1\rangle, \dots, |\mathbf{P}_n\rangle$, construct Frenet-like frames for each interior point $|\mathbf{P}_i\rangle$:
 
 **Tangent Vector Estimation** (central difference):
-$$
-|\mathbf{T}_i\rangle = \frac{|\mathbf{P}_{i+1}\rangle - |\mathbf{P}_{i-1}\rangle}{\||\mathbf{P}_{i+1}\rangle - |\mathbf{P}_{i-1}\rangle\|}
-$$
+$$|\mathbf{T}_i\rangle = \frac{|\mathbf{P}_{i+1}\rangle - |\mathbf{P}_{i-1}\rangle}{\||\mathbf{P}_{i+1}\rangle - |\mathbf{P}_{i-1}\rangle\|}$$
 
 **Binormal Vector Construction:**
-$$
-|\mathbf{B}_i\rangle = \frac{(|\mathbf{P}_i\rangle - |\mathbf{P}_{i-1}\rangle) \times (|\mathbf{P}_{i+1}\rangle - |\mathbf{P}_i\rangle)}{\|(|\mathbf{P}_i\rangle - |\mathbf{P}_{i-1}\rangle) \times (|\mathbf{P}_{i+1}\rangle - |\mathbf{P}_i\rangle)\|}
-$$
+$$|\mathbf{B}_i\rangle = \frac{(|\mathbf{P}_i\rangle - |\mathbf{P}_{i-1}\rangle) \times (|\mathbf{P}_{i+1}\rangle - |\mathbf{P}_i\rangle)}{\|(|\mathbf{P}_i\rangle - |\mathbf{P}_{i-1}\rangle) \times (|\mathbf{P}_{i+1}\rangle - |\mathbf{P}_i\rangle)\|}$$
 
 **Normal Vector Construction:**
-$$
-|\mathbf{N}_i\rangle = |\mathbf{B}_i\rangle \times |\mathbf{T}_i\rangle
-$$
+$$|\mathbf{N}_i\rangle = |\mathbf{B}_i\rangle \times |\mathbf{T}_i\rangle$$
 
 **Local Frame:**
-$$
-|\mathbf{C}_i\rangle = \{|\mathbf{o}\rangle=|\mathbf{P}_i\rangle, \ |\mathbf{x}\rangle=|\mathbf{T}_i\rangle, \ |\mathbf{y}\rangle=|\mathbf{N}_i\rangle, \ |\mathbf{z}\rangle=|\mathbf{B}_i\rangle\}
-$$
+$$|\mathbf{C}_i\rangle = \{|\mathbf{o}\rangle=|\mathbf{P}_i\rangle, \ |\mathbf{x}\rangle=|\mathbf{T}_i\rangle, \ |\mathbf{y}\rangle=|\mathbf{N}_i\rangle, \ |\mathbf{z}\rangle=|\mathbf{B}_i\rangle\}$$
 
 #### Frame Field Interpolation (SE(3) Group Interpolation)
 
 **Relative Transform Computation:**
-$$
-\Delta|\mathbf{C}\rangle = |\mathbf{C}_{i+1}\rangle \langle \mathbf{C}_i|
-$$
+$$\Delta|\mathbf{C}\rangle = |\mathbf{C}_{i+1}\rangle \langle \mathbf{C}_i|$$
 
 **Lie Algebra Parameterization:**
-$$
-|\boldsymbol{\xi}\rangle = \ln(\Delta|\mathbf{C}\rangle) \in \mathfrak{se}(3)
-$$
+$$|\boldsymbol{\xi}\rangle = \ln(\Delta|\mathbf{C}\rangle) \in \mathfrak{se}(3)$$
 
 **Frame Interpolation Formula:**
-$$
-|\mathbf{C}(t)\rangle = |\mathbf{C}_i\rangle \exp(t \cdot \langle\boldsymbol{\xi}|), \quad t \in [0,1]
-$$
+$$|\mathbf{C}(t)\rangle = |\mathbf{C}_i\rangle \exp(t \cdot \langle\boldsymbol{\xi}|), \quad t \in [0,1]$$
 
 ## 🚀 Quick Start
 
@@ -321,9 +248,7 @@ The **Coordinate Algebra Geometry Framework** with Dirac notation provides a uni
 
 By treating coordinate systems as algebraic objects in bra-ket formalism, it creates an intuitive syntax that mirrors mathematical reasoning while maintaining computational efficiency. The curvature computation method based on intrinsic gradient operators through:
 
-$$
-G_\mu = \frac{\partial |c\rangle}{\partial \mu} \langle c| \quad \text{and} \quad R_{uv} = [G_u, G_v]
-$$
+$$G_\mu = \frac{\partial |c\rangle}{\partial \mu} \langle c| \quad \text{and} \quad R_{uv} = [G_u, G_v]$$
 
 achieves revolutionary simplification in curvature computation.
 
