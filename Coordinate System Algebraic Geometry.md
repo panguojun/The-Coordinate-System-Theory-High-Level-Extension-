@@ -1,4 +1,3 @@
-```markdown
 # Coordinate System Theory and Implementation: From Basic Concepts to Differential Geometry Applications
 
 <div style="font-family: 'Courier New', monospace; font-weight: bold; line-height: 1.1;">
@@ -876,4 +875,3 @@ $$
 - Provided a powerful and intuitive curvature calculation tool for computer graphics, physical simulation, and geometric processing
 
 This approach bridges the gap between abstract mathematics and practical implementation, making complex operations from basic coordinate transformations to advanced differential geometry accessible to developers across multiple fields.
-```
