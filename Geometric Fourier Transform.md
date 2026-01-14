@@ -1,7 +1,7 @@
 # Geometric Fourier Transform: A Frame Field Approach
 
 *A unified framework connecting Dirac notation, Fourier analysis, and quantum uncertainty through frame field algebra*
-
+DOI: https://doi.org/10.5281/zenodo.18217542
 ## 🎯 Overview
 
 This project presents a **geometric reformulation** of Fourier transforms and quantum mechanics using **frame field algebra**. We demonstrate that:
