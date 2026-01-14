@@ -12,6 +12,7 @@
                                                                                  __/ |
                                                                                 |___/
 ```
+DOI: https://doi.org/10.5281/zenodo.18217542
 
 ## 🚀 Overview
 
